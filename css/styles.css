@@ -710,8 +710,5 @@ button {
 .input-checkbox:checked + .form-checkbox > .checkbox-custom {
   background-color: #404bbf;
   border: none;
-}
-
-.input-checkbox:checked + .form-checkbox > .checkbox-icon {
   fill: #f4f4fd;
 }
