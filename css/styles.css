@@ -494,7 +494,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 16px;
   color: #fff;
   background-color: #4d5ae5;
   font-size: 16px;
@@ -513,6 +512,7 @@ button {
 }
 .icon-subscribe {
   fill: #ffffff;
+  margin-left: 16px;
 }
 
 /* Modal window */
@@ -621,7 +621,7 @@ button {
   background-color: transparent;
   outline: transparent;
   padding-left: 38px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus-within {
@@ -656,8 +656,7 @@ button {
   border-radius: 4px;
   outline: transparent;
   background-color: transparent;
-  padding-top: 8px;
-  padding-left: 16px;
+  padding: 8px 16px;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -708,11 +707,11 @@ button {
   fill: #f4f4fd;
 }
 
-.input-checkbox:checked + .checkbox-custom {
+.input-checkbox:checked + .form-checkbox > .checkbox-custom {
   background-color: #404bbf;
   border: none;
 }
 
-.input-checkbox:checked + .checkbox-icon {
+.input-checkbox:checked + .form-checkbox > .checkbox-icon {
   fill: #f4f4fd;
 }
